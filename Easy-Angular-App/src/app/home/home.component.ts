@@ -7,15 +7,12 @@ import { DataService } from '../data.service'
 })
 export class HomeComponent implements OnInit {
 
-  h1Style: boolean = false;
+  home: Object;
 
   constructor(private data: DataService) { }
 
   ngOnInit(): void {
   }
 
-  firstClick() {
-    this.data.firstClick();
-  }
 
 }
