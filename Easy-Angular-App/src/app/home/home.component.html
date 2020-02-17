@@ -1,3 +1,9 @@
 <h1>Home</h1>
 
-<button>Click Me!</button>
+<ul *ngIf="users">
+  <li *ngFor="let user of users">
+    <img [src]="user.avatar">
+    <p>{{ user.name }} {{ user.username }}</p><br>
+    <p>{{user.email}}</p>
+  </li>
+</ul>

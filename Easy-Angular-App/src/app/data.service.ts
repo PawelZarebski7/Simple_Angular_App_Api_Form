@@ -9,6 +9,6 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getUsers(){
-    return this.http.get('https://jsonplaceholder.typicode.com/todos/1')
+    return this.http.get('https://jsonplaceholder.typicode.com/users')
   }
 }
