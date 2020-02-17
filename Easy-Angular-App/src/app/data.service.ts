@@ -8,7 +8,7 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  firstClick() {
-    return console.log('clicked');
+  getUsers(){
+    return this.http.get('https://reares.in/api/users')
   }
 }
